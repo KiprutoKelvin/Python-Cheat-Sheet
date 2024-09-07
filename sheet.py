@@ -57,35 +57,44 @@ items = my_dict.items() # Returns all key-value pairs
 # File Operations
 file = open("file.txt","r") # Opens a file for reading
 file_content = file.read() # Reads the entire file
-file.close()
-= file.read() # Reads the entire file
-# Closes the file
+file.close() # Closes the file
+
+# Error Handling
 try:
-risky_code()
-except ValueError
-print("Caught a ValueError"
+    risky_code()
+except ValueError:
+    print("Caught a ValueError")
 finally:
+    print("This runs no matter what")
+
+#Importing Modules
 import math # Imports the entire math module
-[Olll math tmport sart  imports only the sart tunct ton from mat
-import math as m
-# Imports math with an alias
+from math import sqrt  # Imports only the sqrt function from math
+import math as m # Imports math with an alias
+
 # Commonly Used Functions
 length = len(my_list) # Returns the number of items in my_list
-num_range = range(5)
- # Generates numbers from 0 to 4
+data_type = type(x) # Returns the type x
+num_range = range(5) # Generates numbers from 0 to 4
 total = sum([1, 2, 3]) # Returns the sum of all items in the list
 smallest = min([1, 2, 3]) # Returns the smallest item in the list
-absolute_value = abs(-5)
-# Returns the largest item in the list
+largest = max([1, 2, 3]) # Returns the largest item in the list
+absolute_value = abs(-5) # Returns the absolute value of -5
 rounded_value = round(3.14159, 2) # Rounds to 2 decimal places
+
 # List Comprehensions
-increment = Tambda x: x +
+squares = [x**2 for x in range(10)] # Creates a list of squares from 0 to 9
+
+# Lamba Functions
+increment = lambda x: x + 1 # Lambda function to add 1 to x
+
 # Classes
-class MyClass
-def init_(self, name
-# Constructor method
-def greet(self):
-return f"Hello,{self.name}!"
-my_object = MyClass("Alice")
-# Creates an instance of MyClass
-print(my_object.greet())# 0utputs:Hello, Alice
+class MyClass:
+    def __init__(self, name)
+        self.name = name # Constructor method
+
+    def greet(self):
+        return f"Hello,{self.name}!"
+
+my_object = MyClass("Alice") # Creates an instance of MyClass
+print(my_object.greet()) # 0utputs:Hello, Alice
