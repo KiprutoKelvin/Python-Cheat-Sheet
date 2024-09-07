@@ -90,7 +90,7 @@ increment = lambda x: x + 1 # Lambda function to add 1 to x
 
 # Classes
 class MyClass:
-    def __init__(self, name)
+    def __init__(self, name):
         self.name = name # Constructor method
 
     def greet(self):
